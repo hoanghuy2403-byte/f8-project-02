@@ -9,6 +9,11 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    height: 5000px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .content {
@@ -16,4 +21,69 @@ body {
     max-width: calc(100% - 135px);
     margin-left: auto;
     margin-right: auto;
+}
+
+/* header */
+.header {
+    padding-top: 36px;
+    background: #fffcf4;
+    position: sticky;
+    top: -36px;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    margin-right: auto;
+    color: #171100;
+    font-family: "Sen", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.navbar ul a {
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875;
+    margin-left: 42px;
+    position: relative;
+}
+
+.navbar ul li:first-child a {
+    color: #171100;
+    font-weight: 600;
+}
+
+.navbar ul li:first-child a::after {
+    content: "";
+    position: absolute;
+    left: 1px;
+    bottom: -3px;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+}
+
+.navbar .btn-signup {
+    display: inline-block;
+    padding: 11px 41px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.875;
+    border-radius: 24.5px;
+    background: #171100;
+    margin-left: 70px;
 }
