@@ -48,6 +48,7 @@ a {
 .header.fixed {
     position: sticky;
     top: -26px;
+    z-index: 1;
 }
 
 .header .body {
@@ -135,6 +136,7 @@ a {
 
 .hero-sumary .item {
     display: flex;
+    align-items: center;
 }
 
 .hero-sumary .item + .item {
@@ -261,4 +263,58 @@ a {
 
 .hero .content-block .desc:last-child {
     margin-top: 8px;
+}
+
+/* popular */
+.popular {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.popular-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-top .heading {
+    color: #171100;
+    font-family: "Sen", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.27;
+    letter-spacing: -0.76px;
+}
+
+.popular-top .desc {
+    margin-top: 16px;
+    width: 458px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.popular-top .control {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.popular-top .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #ffb900;
+    border: 1px solid #ffb900;
+    background: none;
+    cursor: pointer;
+}
+
+.popular-top .control-btn:hover {
+    background: #ffb900;
+    color: #fff;
 }
