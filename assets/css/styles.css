@@ -40,6 +40,18 @@ a {
     opacity: 0.8;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    line-clamp: var(--line-clamp, 1);
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
 /* header */
 .header {
     background: #fffcf4;
@@ -356,6 +368,7 @@ a {
 }
 
 .course-list .info .title {
+    padding-right: 6px;
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
@@ -380,6 +393,7 @@ a {
 }
 
 .course-list .course-item .desc {
+    --line-clamp: 2;
     margin-top: 6px;
     color: #5f5b53;
     font-size: 1.4rem;
