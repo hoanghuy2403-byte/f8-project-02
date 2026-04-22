@@ -428,3 +428,77 @@ a {
     background: #ffb900;
     cursor: pointer;
 }
+
+/* testimonial */
+.testimonial {
+    padding: 96px 0;
+    margin-top: 135px;
+    background: #2e2100;
+}
+
+.testimonial .body {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial .testimonial-quote-box {
+    position: relative;
+    margin-left: auto;
+    width: 66%;
+}
+
+.testimonial .testimonial-profile .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial .testimonial-profile .fullname {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: "Sen", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42;
+}
+
+.testimonial .testimonial-profile .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.testimonial .testimonial-profile .box-dots {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.testimonial .testimonial-profile .box-dots .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+}
+
+.testimonial .testimonial-profile .box-dots .dot.active {
+    background: #ffb900;
+}
+
+.testimonial .testimonial-quote-box .quote-box {
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.54;
+}
+
+.testimonial .testimonial-quote-box .icon {
+    position: absolute;
+    top: -28px;
+    left: -30px;
+}
