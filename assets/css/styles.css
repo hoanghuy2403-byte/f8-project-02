@@ -436,14 +436,17 @@ a {
     background: #2e2100;
 }
 
-.testimonial .body {
+.testimonial .feedback-item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-shrink: 0;
+    transform: translateX(-100%);
+    transition: all ease 0.3s;
 }
 
 .testimonial .testimonial-quote-box {
-    position: relative;
-    margin-left: auto;
     width: 66%;
 }
 
@@ -483,13 +486,16 @@ a {
     height: 6px;
     border-radius: 50%;
     background: #634700;
+    cursor: pointer;
 }
 
 .testimonial .testimonial-profile .box-dots .dot.active {
     background: #ffb900;
+    cursor: default;
 }
 
 .testimonial .testimonial-quote-box .quote-box {
+    margin-left: 30px;
     color: #fff;
     font-size: 2.6rem;
     font-style: italic;
@@ -497,8 +503,88 @@ a {
     line-height: 1.54;
 }
 
-.testimonial .testimonial-quote-box .icon {
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+/* Features */
+.features {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.feature-content .image-wrapper {
+    position: relative;
+    width: 49%;
+    height: 438px;
+    display: flex;
+    gap: 30px;
+}
+
+.feature-content .left {
+    width: 49%;
+}
+
+.feature-content .image-wrapper .feature-img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.feature-content .image-wrapper .feature-img:first-child {
     position: absolute;
-    top: -28px;
-    left: -30px;
+    bottom: 0;
+}
+
+.feature-content .image-wrapper .feature-img:last-child {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.feature-content .right,
+.feature-content .description {
+    width: 41%;
+}
+
+.feature-content .title {
+    color: #171100;
+    font-family: "Sen", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.76px;
+}
+
+.feature-content .description .info,
+.feature-content .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.feature-content .btn {
+    margin-top: 32px;
+    min-width: 137px;
+    padding: 11px 37px;
+    background: #ffb900;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.feature-content .right .img {
+    width: 100%;
+    height: 440px;
+    border-radius: 20px;
+    object-fit: cover;
 }
